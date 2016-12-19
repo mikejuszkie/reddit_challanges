@@ -7,7 +7,7 @@
 CC = gcc
 CFLAGS = -std=c99 -Wall -g
 BUILD_DIR = build
-OUTPUT = base
+OUTPUT = letter_by_leter
 
 
 .PHONY: debug clean rebuild
