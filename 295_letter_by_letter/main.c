@@ -10,7 +10,10 @@
 #include <time.h>
 #include <inttypes.h>
 
-// include custom headders
+// Define macros and constaints
+#ifndef  BUFFER_SIZE
+ #define BUFFER_SIZE 100
+#endif
 
 
 
@@ -19,15 +22,15 @@
 
 
 
-int main(int argc, char const *argv[])
+int main(char a[], char b[])
 {
 
 	int str_len = 0;
 
   	// Take Input from user or file.
 
-	char str_A[4] = "this";
-	char str_B[4] = "shat";
+	char str_A[BUFFER_SIZE] = "a fall to the floor";
+	char str_B[BUFFER_SIZE] = "braking the door in";
 
 	// check the length of both strings.
 	str_len = sizeof(str_A);
@@ -45,7 +48,7 @@ int main(int argc, char const *argv[])
 			str_A[i] = str_B[i];
 			printf("%s\n", str_A);
 		}
-		
+
 	}
 
 
