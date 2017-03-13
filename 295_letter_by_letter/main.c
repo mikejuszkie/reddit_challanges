@@ -22,8 +22,9 @@
 
 
 
-int main(char a[], char b[])
+int main(int argc, char const *argv[])
 {
+
 
 	int str_len = 0;
 
@@ -37,12 +38,12 @@ int main(char a[], char b[])
 	if(str_len < sizeof(str_B))
 		str_len = sizeof(str_B);
 
-	// use a for loop to change the sting 
+	// use a for loop to change the sting
 	// letter by letter and print out each step.
 	printf("%s\n", str_A);
 	for (int i = 0; i < str_len; ++i)
 	{
-		
+
 		if(str_A[i] != str_B[i])
 		{
 			str_A[i] = str_B[i];
